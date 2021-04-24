@@ -1,0 +1,25 @@
+@media all and (max-width:600px){
+    body{
+        display: none;
+    }
+}
+
+//Mobile devices
+@media all and (max-width:480px) {
+    
+}
+
+//IPads, Tablets
+@media all and (min-width:481px) and (max-width:768px) {
+    
+}
+
+//Small screens, laptops
+@media all and (min-width:769px) and (max-width:1024px) {
+    
+}
+
+//Destops, large screens
+@media all and (min-width:1025px) {
+    
+}

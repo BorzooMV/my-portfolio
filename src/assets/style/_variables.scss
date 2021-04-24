@@ -1,0 +1,30 @@
+//colors
+$Primary:rgb(114, 114, 253);
+$Secondary:yellow;
+$Light:rgb(241, 241, 241);
+$Dark:rgb(41, 41, 41);
+
+//fonts
+/*
+font-family: 'Audiowide', cursive; ***FOR BOLD HEADLINES
+font-family: 'Poppins', sans-serif; ***FOR BODY w:400,700 i
+font-family: 'Quicksand', sans-serif; ***FOR TINY DETAILS
+*/
+p{
+    font-family: 'Poppins', sans-serif;
+}
+
+.veryBold{
+    font-family: 'Audiowide', cursive;
+}
+
+.tinyDetails{
+    font-family: 'Quicksand', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+//attributes
+$BorderRadius : 10%;

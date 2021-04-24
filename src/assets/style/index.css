@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*
+font-family: 'Audiowide', cursive; ***FOR BOLD HEADLINES
+font-family: 'Poppins', sans-serif; ***FOR BODY w:400,700 i
+font-family: 'Quicksand', sans-serif; ***FOR TINY DETAILS
+*/
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+.veryBold {
+  font-family: "Audiowide", cursive;
+}
+
+.tinyDetails {
+  font-family: "Quicksand", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media all and (max-width: 600px) {
+  body {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
