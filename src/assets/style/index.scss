@@ -1,6 +1,15 @@
 @import './global';
 @import './variables';
 @import './mediaQueries';
+@import './Home';
+@import './Intro';
 
 //components
 @import './Header';
+
+body{
+    position: relative;
+    background: $Mid;
+    z-index: 0;
+}
+

@@ -1,25 +1,95 @@
-@media all and (max-width:600px){
-    body{
-        display: none;
-    }
-}
-
 //Mobile devices
 @media all and (max-width:480px) {
     
+
+    header{
+        #menu-btn{
+            font-size: 7vw;
+            width: 10%;
+        }
+
+        nav{
+            display: none;
+        }
+
+        .logo{
+            width: 60% !important;
+            h1{
+                font-size: 5vw;
+            }
+            p{
+                font-size: 3vw;
+            }
+        }
+
+        #menu-btn{
+            display: block;
+        }
+
+    }
 }
 
 //IPads, Tablets
 @media all and (min-width:481px) and (max-width:768px) {
-    
+    header{
+        #menu-btn{
+            font-size: 7vw;
+            width: 10%;
+        }
+
+        nav{
+            display: none;
+        }
+
+        .logo{
+            width: 60% !important;
+            h1{
+                font-size: 5vw;
+            }
+            p{
+                font-size: 3vw;
+            }
+        }
+
+        #menu-btn{
+            display: block;
+        }
+
+
+        .nav-menu-close,
+        .nav-menu-open{
+            border-radius: 0;
+            width: 100vw;
+            ul{
+                li{
+                    a{
+                        font-size: 3.5vw;
+                    }
+                }
+            }
+        }
+            
+        .nav-menu-close{
+            transition: all 200ms ease;
+        }
+
+    }
 }
 
 //Small screens, laptops
 @media all and (min-width:769px) and (max-width:1024px) {
-    
+    header{
+        #menu{
+            display: none;
+        }
+    }
 }
 
 //Destops, large screens
 @media all and (min-width:1025px) {
-    
+    header{
+        #menu{
+            display: none;
+        }
+    }
 }

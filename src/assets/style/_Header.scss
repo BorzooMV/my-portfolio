@@ -1,0 +1,126 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: $Primary;
+    color:$Light;
+    position: relative;
+	z-index: 1;
+	width: 100vw;
+
+    .logo{
+        width: 40%;
+    }
+
+    nav{
+        width: 50%;
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+}
+
+#menu-btn{
+	display: none;
+	background: none;
+	color : $Light;
+	border:none;
+	font-size: 3vw;
+	cursor: pointer;
+	outline: none;
+}
+
+.nav-menu-close{
+	transform:translateX(100px);
+	opacity: 0;
+	border-radius: 20%;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	top: 100%;
+	right:0px;
+	width: 300px;
+	text-align: center;
+	padding: 20px 0;
+	position: absolute;
+	background:$Light;
+	box-shadow: $LightShadow;
+	z-index: 2;
+	ul{
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 100%;
+		li{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 50px;
+			width: 60%;
+		}
+		
+
+		a{
+			color: $Dark;
+			padding: 10px;
+			font-size: 6vw;
+			&:hover{
+				display: block;
+				background: $Dark;
+				color: $Light;
+				touch-action: none;
+			}
+		}
+	}//ul
+}//nav-menu
+
+
+.nav-menu-open{
+	transform:translateX(0);
+	opacity: 100%;
+	transition : all linear 150ms;
+	border-radius: $BorderRadius;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	top: 100%;
+	right:0px;
+	width: 70vw;
+	text-align: center;
+	padding: 20px 0;
+	position: absolute;
+	background:$Light;
+	box-shadow: $LightShadow;
+	z-index: 2;
+	ul{
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 100%;
+		li{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 50px;
+			width: 60%;
+		}
+		
+
+		a{
+			color: $Dark;
+			padding: 10px;
+			font-size: 6vw;
+			&:hover{
+				display: block;
+				background: $Dark;
+				color: $Light;
+				touch-action: none;
+			}
+		}
+	}//ul
+}//nav-menu
