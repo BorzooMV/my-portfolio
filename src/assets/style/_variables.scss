@@ -1,7 +1,7 @@
 //colors
-$Primary:rgb(114, 114, 253);
-$Secondary:yellow;
-$Light:rgb(241, 241, 241);
+$Primary:rgb(238, 46, 49);
+$Secondary:rgb(252, 220, 77);
+$Light:rgb(236, 235, 243);
 $Dark:rgb(41, 41, 41);
 $Mid:rgb(68, 68, 68);
 
@@ -55,7 +55,51 @@ a{
 //attributes
 $BorderRadius : 2vw;
 $LightShadow : 0px 3px 5px rgba(0,0,0,0.3);
-$GlowBorderRadius: 5vw;
-$GlowBorderScale: scale(1.09);
-$GlowBorderBlur:blur(7px);
-$GlowBorderOpacity:40%;
+$LargeShadow : 0px 10px 30px rgb(39, 39, 39);
+
+//mixins
+@mixin box_secondary {
+    position: relative;
+    width: 60%;
+    margin: auto;
+    margin-top: 10vw;
+    background-color: $Secondary;
+    padding: 50px;
+    border-radius: $BorderRadius;
+    box-shadow:$LargeShadow;
+    h1,h2,h3,h4,h5,h6,
+    p,a{
+        color: $Dark;
+    }
+}
+
+@mixin range_default {
+    -webkit-appearance: none;
+    &::-webkit-slider-thumb{
+       -webkit-appearance: none;
+    }
+    &:focus{
+       outline: none;
+    }
+    &::-ms-track{
+       background-color: transparent;
+       background: transparent;
+       color: transparent;
+    }
+    &::-webkit-slider-thumb{
+        border: 1px solid black;
+        height: 2vw;
+        width: 2vw;
+        border-radius: 0.3vw;
+        background:$Light;
+        box-shadow: 10px 0 0 $Mid;
+        
+    }
+
+    &::-webkit-slider-runnable-track{
+        background: $Dark;
+        box-shadow: $LightShadow;
+
+    }
+    
+}

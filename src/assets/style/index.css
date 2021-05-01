@@ -13,19 +13,19 @@ font-family: 'Quicksand', sans-serif; ***FOR TINY DETAILS
 p {
   font-family: "Poppins", sans-serif;
   font-size: 1.8vw;
-  color: #f1f1f1;
+  color: #ecebf3;
   line-height: 3vw;
   margin-top: 1.5vw;
 }
 
 h1, h2 {
   font-family: "Audiowide", cursive;
-  color: #f1f1f1;
+  color: #ecebf3;
 }
 
 h1 {
   font-size: 3.5vw;
-  color: #f1f1f1;
+  color: #ecebf3;
 }
 
 h2 {
@@ -35,19 +35,19 @@ h2 {
 h3, h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  color: #f1f1f1;
+  color: #ecebf3;
 }
 
 .tinyDetails {
   font-family: "Quicksand", sans-serif;
-  color: #f1f1f1;
+  color: #ecebf3;
 }
 
 a {
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-size: 2vw;
-  color: #f1f1f1;
+  color: #ecebf3;
 }
 
 @media all and (max-width: 480px) {
@@ -102,6 +102,7 @@ header .nav-menu-open ul li a {
   }
   header .nav-menu-close {
     transition: all 200ms ease;
+    transform: translateX(100%);
   }
 }
 @media all and (min-width: 769px) and (max-width: 1024px) {
@@ -118,27 +119,14 @@ header .nav-menu-open ul li a {
   position: relative;
   width: 60%;
   margin: auto;
-  margin-top: 30px;
-  background-color: yellow;
+  margin-top: 10vw;
+  background-color: #fcdc4d;
   padding: 50px;
   border-radius: 2vw;
+  box-shadow: 0px 10px 30px #272727;
 }
 .Intro h2, .Intro p {
   color: #292929;
-}
-.Intro::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: red;
-  left: 0;
-  top: 0;
-  border-radius: 5vw;
-  transform: scale(1.09);
-  z-index: -1;
-  filter: blur(7px);
-  opacity: 40%;
 }
 
 header {
@@ -146,11 +134,12 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 5%;
-  background-color: #7272fd;
-  color: #f1f1f1;
+  background-color: #ee2e31;
+  color: #ecebf3;
   position: relative;
   z-index: 1;
   width: 100vw;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
 }
 header .logo {
   width: 40%;
@@ -167,7 +156,7 @@ header nav ul {
 #menu-btn {
   display: none;
   background: none;
-  color: #f1f1f1;
+  color: #ecebf3;
   border: none;
   font-size: 3vw;
   cursor: pointer;
@@ -175,9 +164,8 @@ header nav ul {
 }
 
 .nav-menu-close {
-  transform: translateX(100px);
-  opacity: 0;
-  border-radius: 20%;
+  transform: translateX(100%);
+  border-radius: 10px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   top: 100%;
@@ -186,8 +174,9 @@ header nav ul {
   text-align: center;
   padding: 20px 0;
   position: absolute;
-  background: #f1f1f1;
+  background: #ecebf3;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+  transition: all 200ms ease;
   z-index: 2;
 }
 .nav-menu-close ul {
@@ -213,15 +202,14 @@ header nav ul {
 .nav-menu-close ul a:hover {
   display: block;
   background: #292929;
-  color: #f1f1f1;
+  color: #ecebf3;
   touch-action: none;
 }
 
 .nav-menu-open {
   transform: translateX(0);
-  opacity: 100%;
   transition: all linear 150ms;
-  border-radius: 2vw;
+  border-radius: 10px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   top: 100%;
@@ -230,8 +218,9 @@ header nav ul {
   text-align: center;
   padding: 20px 0;
   position: absolute;
-  background: #f1f1f1;
+  background: #ecebf3;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+  transition: all 200ms ease;
   z-index: 2;
 }
 .nav-menu-open ul {
@@ -257,8 +246,62 @@ header nav ul {
 .nav-menu-open ul a:hover {
   display: block;
   background: #292929;
-  color: #f1f1f1;
+  color: #ecebf3;
   touch-action: none;
+}
+
+.Skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Skill .Skill-info h3 {
+  text-transform: capitalize;
+  margin-bottom: 1vw;
+}
+.Skill .Skill-info input {
+  -webkit-appearance: none;
+}
+.Skill .Skill-info input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+.Skill .Skill-info input:focus {
+  outline: none;
+}
+.Skill .Skill-info input::-ms-track {
+  background-color: transparent;
+  background: transparent;
+  color: transparent;
+}
+.Skill .Skill-info input::-webkit-slider-thumb {
+  border: 1px solid black;
+  height: 2vw;
+  width: 2vw;
+  border-radius: 0.3vw;
+  background: #ecebf3;
+  box-shadow: 10px 0 0 #444444;
+}
+.Skill .Skill-info input::-webkit-slider-runnable-track {
+  background: #292929;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+.Skill i {
+  font-size: 5vw;
+}
+
+.Skills {
+  position: relative;
+  width: 60%;
+  margin: auto;
+  margin-top: 10vw;
+  background-color: #fcdc4d;
+  padding: 50px;
+  border-radius: 2vw;
+  box-shadow: 0px 10px 30px #272727;
+}
+.Skills h1, .Skills h2, .Skills h3, .Skills h4, .Skills h5, .Skills h6,
+.Skills p, .Skills a {
+  color: #292929;
 }
 
 body {

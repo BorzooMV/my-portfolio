@@ -1,11 +1,12 @@
 @import './global';
 @import './variables';
 @import './mediaQueries';
+//components
 @import './Home';
 @import './Intro';
-
-//components
 @import './Header';
+@import './Skill';
+@import './Skills';
 
 body{
     position: relative;

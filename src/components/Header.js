@@ -14,7 +14,7 @@ const Header = () => {
         if(menuStatus){
             setTimeout(()=>{
                 menu.style.display = 'none';
-            },200);
+            },300);
         }else{
             menu.style.display = "block";
         }

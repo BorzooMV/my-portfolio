@@ -1,0 +1,17 @@
+.Skill{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .Skill-info{
+        h3{
+            text-transform: capitalize;
+            margin-bottom: 1vw;
+        }
+        input{
+            @include range_default;
+        }
+    }
+    i{
+        font-size: 5vw;
+    }
+}
