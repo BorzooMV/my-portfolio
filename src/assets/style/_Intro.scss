@@ -13,4 +13,18 @@
     p{
         color: $Dark;
     }
+    img{
+        float: right;
+        width: 25vw;
+        height: auto;
+        border-radius: 4vw;
+        border: 1vw solid $Primary;
+        box-shadow: $LargeShadow;
+        position: relative;
+        left: 12vw;
+        bottom: 7vw;
+        margin-left: -5vw;
+        margin-bottom: -5vw;
+        shape-outside: circle(50%);
+    }
 }

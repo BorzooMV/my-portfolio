@@ -19,6 +19,28 @@ header{
             list-style: none;
             display: flex;
             justify-content: space-evenly;
+			li{
+				border-bottom: 0px solid $Light;
+				position: relative;
+				cursor: pointer;
+				&::after{
+					content: '';
+					background:$Light;
+					width: 100%;
+					height: 3px;
+					position: absolute;
+					left: 0;
+					top:100%;
+					transform: scale(0);
+					transition: all 200ms ease;
+				}
+
+				&:hover{
+					&::after{
+						transform: scale(1);
+					}
+				}
+			}
         }
     }
 }

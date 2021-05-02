@@ -3,7 +3,7 @@
 //nav menu stays open
 
 import React,{ useState } from 'react';
-
+import { Link } from 'react-router-dom';
 const Header = () => {
 	const [menuStatus, setMenuStatus] = useState(false);
     const menuBtnHandler = () => {
@@ -19,17 +19,20 @@ const Header = () => {
             menu.style.display = "block";
         }
     }
+    const linkClickHandler = () => {
+        setMenuStatus(false);
+    }
     return(
         <header>
             <div className="logo">
-                <h1>Borzoo Moazami</h1>
+                <Link to="/"><h1>Borzoo Moazami</h1></Link>
                 <p>Front-end Developer</p>
             </div>
             <nav>
                 <ul>
-                    <li><a>Portfolio</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Connect</a></li>
+                    <li><Link to="#">Portfolio</Link></li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="#">Connect</Link></li>
                 </ul>
             </nav>
             {
@@ -40,12 +43,13 @@ const Header = () => {
                     }
                 })
             }
+
 			<button id="menu-btn" onClick={menuBtnHandler}><i className="fas fa-bars"></i></button>
-			<div id="menu" className = {menuStatus ? "nav-menu-open" : "nav-menu-close"}>
+			<div id="menu" onMouseLeave={linkClickHandler}  className = {menuStatus ? "nav-menu-open" : "nav-menu-close"}>
                         <ul>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Connect</a></li>
+                            <li><Link to="#" onClick={linkClickHandler}>Portfolio</Link></li>
+                            <li><Link to="/about" onClick={linkClickHandler}>About</Link></li>
+                            <li><Link to="#" onClick={linkClickHandler}>Connect</Link></li>
                         </ul>
 			</div>
         </header>

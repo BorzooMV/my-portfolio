@@ -8,10 +8,11 @@
 @import './Skill';
 @import './Skills';
 @import './Footer';
+@import './About';
 
 body{
     position: relative;
-    background: $Mid;
+    background-color: $Mid;
     z-index: 0;
 }
 
