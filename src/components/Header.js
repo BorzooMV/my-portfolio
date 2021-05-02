@@ -27,7 +27,6 @@ const Header = () => {
             </div>
             <nav>
                 <ul>
-                    <li><a>Blog</a></li>
                     <li><a>Portfolio</a></li>
                     <li><a>About</a></li>
                     <li><a>Connect</a></li>
@@ -44,7 +43,6 @@ const Header = () => {
 			<button id="menu-btn" onClick={menuBtnHandler}><i className="fas fa-bars"></i></button>
 			<div id="menu" className = {menuStatus ? "nav-menu-open" : "nav-menu-close"}>
                         <ul>
-                            <li><a href="#">Blog</a></li>
                             <li><a href="#">Portfolio</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Connect</a></li>

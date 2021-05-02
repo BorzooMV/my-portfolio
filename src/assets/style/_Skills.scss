@@ -1,3 +1,7 @@
 .Skills{
     @include box_secondary;
+    h2{
+        margin-bottom: 4vw;
+        color: $Primary;
+    }
 }

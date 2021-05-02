@@ -125,7 +125,10 @@ header .nav-menu-open ul li a {
   border-radius: 2vw;
   box-shadow: 0px 10px 30px #272727;
 }
-.Intro h2, .Intro p {
+.Intro h2 {
+  color: #ee2e31;
+}
+.Intro p {
   color: #292929;
 }
 
@@ -254,6 +257,7 @@ header nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 2vw;
 }
 .Skill .Skill-info h3 {
   text-transform: capitalize;
@@ -261,6 +265,9 @@ header nav ul {
 }
 .Skill .Skill-info input {
   -webkit-appearance: none;
+  width: 30vw;
+  overflow: hidden;
+  box-shadow: 0px 3px 5px #a38f32;
 }
 .Skill .Skill-info input::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -274,19 +281,16 @@ header nav ul {
   color: transparent;
 }
 .Skill .Skill-info input::-webkit-slider-thumb {
-  border: 1px solid black;
   height: 2vw;
-  width: 2vw;
-  border-radius: 0.3vw;
-  background: #ecebf3;
-  box-shadow: 10px 0 0 #444444;
+  width: 1vw;
+  background: #444444;
+  box-shadow: 30vw 0 0 30vw #292929;
 }
 .Skill .Skill-info input::-webkit-slider-runnable-track {
-  background: #292929;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+  background: #ee2e31;
 }
 .Skill i {
-  font-size: 5vw;
+  font-size: 6vw;
 }
 
 .Skills {
@@ -302,6 +306,20 @@ header nav ul {
 .Skills h1, .Skills h2, .Skills h3, .Skills h4, .Skills h5, .Skills h6,
 .Skills p, .Skills a {
   color: #292929;
+}
+.Skills h2 {
+  margin-bottom: 4vw;
+  color: #ee2e31;
+}
+
+footer {
+  background: #ee2e31;
+  margin-top: 10vw;
+  height: 10vh;
+  padding: 2vw;
+}
+footer h3 {
+  font-family: "Quicksand", sans-serif;
 }
 
 body {

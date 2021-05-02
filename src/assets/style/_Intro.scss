@@ -7,7 +7,10 @@
     padding: 50px;
     border-radius: $BorderRadius;
     box-shadow:$LargeShadow;
-    h2,p{
+    h2{
+        color:$Primary;
+    }
+    p{
         color: $Dark;
     }
 }

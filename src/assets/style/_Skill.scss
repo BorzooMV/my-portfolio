@@ -2,16 +2,42 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 2vw;
     .Skill-info{
         h3{
             text-transform: capitalize;
             margin-bottom: 1vw;
         }
         input{
-            @include range_default;
+            -webkit-appearance: none;
+            width:30vw;
+            overflow: hidden;
+            box-shadow: $LightShadowOnS;
+            &::-webkit-slider-thumb{
+            -webkit-appearance: none;
+            }
+            &:focus{
+            outline: none;
+            }
+            &::-ms-track{
+            background-color: transparent;
+            background: transparent;
+            color: transparent;
+            }
+            &::-webkit-slider-thumb{
+                height: 2vw;
+                width: 1vw;
+                background:$Mid;
+                box-shadow: 30vw 0 0 30vw $Dark;
+                
+            }
+
+            &::-webkit-slider-runnable-track{
+                background: $Primary;
+            }
         }
     }
     i{
-        font-size: 5vw;
+        font-size: 6vw;
     }
 }

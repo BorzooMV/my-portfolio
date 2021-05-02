@@ -21,9 +21,12 @@ const Skills = () => {
     ]);
     return(
         <div className="Skills">
-            <Skill name={skills[0].name} icon={skills[0].icon} proficiency={skills[0].proficiency} />
-            <Skill name={skills[1].name} icon={skills[1].icon} proficiency={skills[1].proficiency}/>
-            <Skill name={skills[2].name} icon={skills[2].icon} proficiency={skills[2].proficiency}/>
+            <h2>Proficiency</h2>
+            {
+                skills.map((skill, i)=>{
+                    return <Skill key={i} name={skill.name} proficiency={skill.proficiency} icon={skill.icon} />
+                })
+            }
         </div>
     );
 }
