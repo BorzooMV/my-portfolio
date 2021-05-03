@@ -12,20 +12,25 @@ font-family: 'Quicksand', sans-serif; ***FOR TINY DETAILS
 */
 p {
   font-family: "Poppins", sans-serif;
-  font-size: 1.8vw;
-  color: #ecebf3;
-  line-height: 3vw;
-  margin-top: 1.5vw;
+  font-size: 1.6vw;
+  color: #F9F5FF;
+  line-height: 2.2vw;
+  margin-bottom: 1.5vw;
+}
+
+li {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4vw;
 }
 
 h1, h2 {
   font-family: "Audiowide", cursive;
-  color: #ecebf3;
+  color: #F9F5FF;
 }
 
 h1 {
   font-size: 3.5vw;
-  color: #ecebf3;
+  color: #F9F5FF;
 }
 
 h2 {
@@ -35,19 +40,19 @@ h2 {
 h3, h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  color: #ecebf3;
+  color: #F9F5FF;
 }
 
 .tinyDetails {
   font-family: "Quicksand", sans-serif;
-  color: #ecebf3;
+  color: #F9F5FF;
 }
 
 a {
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-size: 2vw;
-  color: #ecebf3;
+  color: #F9F5FF;
 }
 
 @media all and (max-width: 480px) {
@@ -120,27 +125,51 @@ header .nav-menu-open ul li a {
   width: 60%;
   margin: auto;
   margin-top: 10vw;
-  background-color: #fcdc4d;
+  background-color: #d9dcd6;
   padding: 50px;
-  border-radius: 2vw;
-  box-shadow: 0px 10px 30px #272727;
+  border-radius: 1vw;
+  box-shadow: 0px 3px 20px #1a1a1a96;
 }
 .Intro h2 {
-  color: #ee2e31;
+  color: #607744;
+  margin-bottom: 2vw;
 }
 .Intro p {
-  color: #292929;
+  color: #383737;
+  margin-bottom: 5vw;
+}
+.Intro .Intro_Read_More {
+  background-color: #4392F1;
+  padding: 2vw 5vw;
+  border-radius: 1vw;
+  box-shadow: 0px 3px 10px #b4b4b4fb;
+  color: #F9F5FF;
+  transition: all ease 200ms;
+}
+.Intro .Intro_Read_More:hover {
+  background-color: transparent;
+  background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.205), transparent);
+  color: #383737;
 }
 .Intro img {
+  border-radius: 1.2vw;
+  width: 100%;
+  height: auto;
+}
+.Intro div {
   float: right;
   width: 25vw;
+  background-color: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.205), transparent);
+  padding: 0.4vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: auto;
-  border-radius: 4vw;
-  border: 1vw solid #ee2e31;
-  box-shadow: 0px 10px 30px #272727;
+  border-radius: 1.5vw;
+  box-shadow: 0px 3px 20px #1a1a1a96;
   position: relative;
   left: 12vw;
-  bottom: 7vw;
+  bottom: 10vw;
   margin-left: -5vw;
   margin-bottom: -5vw;
   shape-outside: circle(50%);
@@ -151,15 +180,18 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 5%;
-  background-color: #ee2e31;
-  color: #ecebf3;
+  background-color: #4392F1;
+  color: #F9F5FF;
   position: relative;
   z-index: 1;
   width: 100vw;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
 }
 header .logo {
   width: 40%;
+}
+header .logo p {
+  pointer-events: none;
 }
 header nav {
   width: 50%;
@@ -170,13 +202,13 @@ header nav ul {
   justify-content: space-evenly;
 }
 header nav ul li {
-  border-bottom: 0px solid #ecebf3;
+  border-bottom: 0px solid #F9F5FF;
   position: relative;
   cursor: pointer;
 }
 header nav ul li::after {
   content: "";
-  background: #ecebf3;
+  background: #F9F5FF;
   width: 100%;
   height: 3px;
   position: absolute;
@@ -185,6 +217,24 @@ header nav ul li::after {
   transform: scale(0);
   transition: all 200ms ease;
 }
+header nav ul li:first-child::after {
+  content: "These part will be added";
+  background: #F9F5FF;
+  font-family: "Quicksand", sans-serif;
+  height: auto;
+  color: #383737;
+  width: 150%;
+  position: absolute;
+  padding: 2vw;
+  text-align: center;
+  border-radius: 1vw;
+  left: -50%;
+  top: 120%;
+  transition: all 200ms ease;
+}
+header nav ul li:first-child a {
+  color: #f9f5ff91;
+}
 header nav ul li:hover::after {
   transform: scale(1);
 }
@@ -192,7 +242,7 @@ header nav ul li:hover::after {
 #menu-btn {
   display: none;
   background: none;
-  color: #ecebf3;
+  color: #F9F5FF;
   border: none;
   font-size: 3vw;
   cursor: pointer;
@@ -210,8 +260,8 @@ header nav ul li:hover::after {
   text-align: center;
   padding: 20px 0;
   position: absolute;
-  background: #ecebf3;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+  background: #F9F5FF;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
   transition: all 200ms ease;
   z-index: 2;
 }
@@ -231,14 +281,14 @@ header nav ul li:hover::after {
   width: 60%;
 }
 .nav-menu-close ul a {
-  color: #292929;
+  color: #383737;
   padding: 10px;
   font-size: 6vw;
 }
 .nav-menu-close ul a:hover {
   display: block;
-  background: #292929;
-  color: #ecebf3;
+  background: #383737;
+  color: #F9F5FF;
   touch-action: none;
 }
 
@@ -254,8 +304,8 @@ header nav ul li:hover::after {
   text-align: center;
   padding: 20px 0;
   position: absolute;
-  background: #ecebf3;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+  background: #F9F5FF;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
   transition: all 200ms ease;
   z-index: 2;
 }
@@ -275,14 +325,14 @@ header nav ul li:hover::after {
   width: 60%;
 }
 .nav-menu-open ul a {
-  color: #292929;
+  color: #383737;
   padding: 10px;
   font-size: 6vw;
 }
 .nav-menu-open ul a:hover {
   display: block;
-  background: #292929;
-  color: #ecebf3;
+  background: #383737;
+  color: #F9F5FF;
   touch-action: none;
 }
 
@@ -292,6 +342,9 @@ header nav ul li:hover::after {
   align-items: center;
   margin-bottom: 2vw;
 }
+.Skill i {
+  color: #383737;
+}
 .Skill .Skill-info h3 {
   text-transform: capitalize;
   margin-bottom: 1vw;
@@ -300,7 +353,7 @@ header nav ul li:hover::after {
   -webkit-appearance: none;
   width: 30vw;
   overflow: hidden;
-  box-shadow: 0px 3px 5px #a38f32;
+  box-shadow: 0px 3px 10px #b4b4b4fb;
 }
 .Skill .Skill-info input::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -316,11 +369,11 @@ header nav ul li:hover::after {
 .Skill .Skill-info input::-webkit-slider-thumb {
   height: 2vw;
   width: 1vw;
-  background: #444444;
-  box-shadow: 30vw 0 0 30vw #292929;
+  background: #454955;
+  box-shadow: 30vw 0 0 30vw #383737;
 }
 .Skill .Skill-info input::-webkit-slider-runnable-track {
-  background: #ee2e31;
+  background: #4392F1;
 }
 .Skill i {
   font-size: 6vw;
@@ -331,22 +384,22 @@ header nav ul li:hover::after {
   width: 60%;
   margin: auto;
   margin-top: 10vw;
-  background-color: #fcdc4d;
+  background-color: #d9dcd6;
   padding: 50px;
-  border-radius: 2vw;
-  box-shadow: 0px 10px 30px #272727;
+  border-radius: 1vw;
+  box-shadow: 0px 3px 20px #1a1a1a96;
 }
 .Skills h1, .Skills h2, .Skills h3, .Skills h4, .Skills h5, .Skills h6,
 .Skills p, .Skills a {
-  color: #292929;
+  color: #383737;
 }
 .Skills h2 {
   margin-bottom: 4vw;
-  color: #ee2e31;
+  color: #607744;
 }
 
 footer {
-  background: #ee2e31;
+  background: #4392F1;
   margin-top: 10vw;
   height: 10vh;
   padding: 2vw;
@@ -360,19 +413,32 @@ footer h3 {
   width: 60%;
   margin: auto;
   margin-top: 10vw;
-  background-color: #fcdc4d;
+  background-color: #d9dcd6;
   padding: 50px;
-  border-radius: 2vw;
-  box-shadow: 0px 10px 30px #272727;
+  border-radius: 1vw;
+  box-shadow: 0px 3px 20px #1a1a1a96;
 }
 .About h1, .About h2, .About h3, .About h4, .About h5, .About h6,
 .About p, .About a {
-  color: #292929;
+  color: #383737;
+}
+.About h2 {
+  color: #607744;
+  margin-bottom: 2vw;
+}
+.About h3 {
+  margin-bottom: 0.8vw;
+}
+.About ul {
+  margin-left: 5vw;
+}
+.About div {
+  margin-bottom: 2vw;
 }
 
 body {
   position: relative;
-  background-color: #444444;
+  background-color: #454955;
   z-index: 0;
 }
 

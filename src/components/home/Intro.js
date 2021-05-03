@@ -1,25 +1,16 @@
 import React from 'react';
 import myPic from '../../assets/images/pics/me.JPG';
-
+import { Link } from 'react-router-dom';
 
 const Intro = () => {
     return(
         <div className="Intro">
-            <img src={myPic} />
-            <h2>Something to remind</h2>
-            <p>
-                Enim excepteur qui Lorem ut elit.
-                Minim est ex non eu adipisicing ut
-                elit minim eu irure. Occaecat aute
-                non tempor aute aliqua mollit laboris.
-                Et id cupidatat fugiat in aliquip esse 
-                nostrud dolor id do consequat deserunt.
-                Eu pariatur enim consectetur ipsum. Do 
-                illum occaecat adipisicing labore sint aute nisi labore aute. 
-                Laborum magna exercitation
-                exercitation laboris mollit sit fugiat repreh
-                enderit.
-            </p>
+            <div>
+                <img src={myPic} />
+            </div>
+            <h2>Little about me</h2>
+            <p>As far as I remember there were two things that kept me awake at night and brought me out of despair and anxiety. Art and problem solving.</p>
+            <Link className="Intro_Read_More" to="/about">Read more</Link>
             
         </div>
     );

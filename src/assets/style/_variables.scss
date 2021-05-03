@@ -1,9 +1,21 @@
 //colors
-$Primary:rgb(238, 46, 49);
-$Secondary:rgb(252, 220, 77);
-$Light:rgb(236, 235, 243);
-$Dark:rgb(41, 41, 41);
-$Mid:rgb(68, 68, 68);
+$Primary:#4392F1;
+$Primary_Hover:#a8cbd6;
+$Secondary:#d9dcd6;
+$Light:#F9F5FF;
+$Green:#607744;
+$Dark:rgb(56, 55, 55);
+$Mid:#454955;
+
+// $Primary:rgb(238, 46, 49);
+// $Primary_Hover:rgb(240, 84, 86);
+// $Secondary:rgb(252, 220, 77);
+// $Light:rgb(236, 235, 243);
+// $Dark:rgb(41, 41, 41);
+// $Mid:rgb(68, 68, 68);
+
+$GrayedOut:#f9f5ff91;
+$Glass:linear-gradient(45deg,transparent,rgba(255, 255, 255, 0.205),transparent);
 
 //fonts
 /*
@@ -13,11 +25,17 @@ font-family: 'Quicksand', sans-serif; ***FOR TINY DETAILS
 */
 p{
     font-family: 'Poppins', sans-serif;
-    font-size: 1.8vw;
+    font-size: 1.6vw;
     color: $Light;
-    line-height: 3vw;
-    margin-top: 1.5vw;
+    line-height: 2.2vw;
+    margin-bottom: 1.5vw;
 }
+
+li{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4vw;
+}
+
 
 h1,h2{
     font-family: 'Audiowide', cursive;
@@ -53,10 +71,10 @@ a{
 }
 
 //attributes
-$BorderRadius : 2vw;
-$LightShadow : 0px 3px 5px rgba(0,0,0,0.3);
-$LightShadowOnS :0px 3px 5px rgb(163, 143, 50);
-$LargeShadow : 0px 10px 30px rgb(39, 39, 39);
+$BorderRadius : 1vw;
+$LightShadow : 0px 3px 10px rgba(0,0,0,0.3);
+$LightShadowOnS :0px 3px 10px #b4b4b4fb;
+$LargeShadow : 0px 3px 20px #1a1a1a96;
 
 //mixins
 @mixin box_secondary {

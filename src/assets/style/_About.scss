@@ -1,3 +1,16 @@
 .About{
     @include box_secondary();
+    h2{
+        color: $Green;
+        margin-bottom: 2vw;
+    }
+    h3{
+        margin-bottom: 0.8vw;
+    }
+    ul{
+        margin-left: 5vw;
+    }
+    div{
+        margin-bottom: 2vw;
+    }
 }

@@ -8,21 +8,45 @@
     border-radius: $BorderRadius;
     box-shadow:$LargeShadow;
     h2{
-        color:$Primary;
+        color:$Green;
+        margin-bottom: 2vw;
     }
     p{
         color: $Dark;
+        margin-bottom: 5vw;
+    }
+    .Intro_Read_More{
+        background-color: $Primary;
+        padding: 2vw 5vw;
+        border-radius: $BorderRadius;
+        box-shadow: $LightShadowOnS;
+        color: $Light;
+        transition: all ease 200ms;
+        &:hover{
+            background-color: transparent;
+            background: $Glass;
+            color: $Dark;
+        }
     }
     img{
+        border-radius: 1.2vw;
+        width: 100%;
+        height: auto;
+    }
+    div{
         float: right;
         width: 25vw;
+        background-color: $Glass;
+        padding: 0.4vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: auto;
-        border-radius: 4vw;
-        border: 1vw solid $Primary;
+        border-radius: 1.5vw;
         box-shadow: $LargeShadow;
         position: relative;
         left: 12vw;
-        bottom: 7vw;
+        bottom: 10vw;
         margin-left: -5vw;
         margin-bottom: -5vw;
         shape-outside: circle(50%);
