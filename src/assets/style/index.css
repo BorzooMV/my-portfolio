@@ -401,11 +401,39 @@ header nav ul li:hover::after {
 footer {
   background: #4392F1;
   margin-top: 10vw;
-  height: 10vh;
   padding: 2vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 1vw;
+  align-items: center;
 }
 footer h3 {
   font-family: "Quicksand", sans-serif;
+}
+footer .footer-social {
+  display: flex;
+  justify-self: end;
+  align-items: center;
+  width: 20vw;
+  justify-content: space-between;
+}
+footer .footer-social a {
+  font-size: 3.5vw;
+}
+footer .footer-copy {
+  grid-column: 1/3;
+  text-align: center;
+  border-top: 2px solid #F9F5FF;
+  padding-top: 0.5vw;
+}
+footer .footer-copy p {
+  font-size: 1.4vw;
+  margin-bottom: 0;
+}
+footer .footer-copy span {
+  color: #F9F5FF;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4vw;
 }
 
 .About {
