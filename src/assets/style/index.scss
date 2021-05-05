@@ -14,5 +14,9 @@ body{
     position: relative;
     background-color: $Mid;
     z-index: 0;
+    overflow-x: hidden;
+}
+html{
+    overflow-x: hidden;
 }
 

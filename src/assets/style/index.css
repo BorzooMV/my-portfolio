@@ -56,6 +56,51 @@ a {
 }
 
 @media all and (max-width: 480px) {
+  p {
+    font-family: "Poppins", sans-serif;
+    font-size: 3.8vw;
+    color: #F9F5FF;
+    line-height: 4.5vw;
+    margin-bottom: 1.5vw;
+  }
+
+  li {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4vw;
+  }
+
+  h1, h2 {
+    font-family: "Audiowide", cursive;
+    color: #F9F5FF;
+  }
+
+  h1 {
+    font-size: 5vw !important;
+    color: #F9F5FF;
+  }
+
+  h2 {
+    font-size: 4.5vw !important;
+  }
+
+  h3, h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #F9F5FF;
+  }
+
+  .tinyDetails {
+    font-family: "Quicksand", sans-serif;
+    color: #F9F5FF;
+  }
+
+  a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 2vw;
+    color: #F9F5FF;
+  }
+
   header #menu-btn {
     font-size: 7vw;
     width: 10%;
@@ -74,6 +119,139 @@ a {
   }
   header #menu-btn {
     display: block;
+  }
+  header #menu ul li:first-child {
+    display: none;
+  }
+
+  .Intro {
+    position: relative;
+    width: 90% !important;
+    margin: auto;
+    margin-top: 25vw !important;
+    background-color: #d9dcd6;
+    padding: 50px;
+    padding-top: 35vw !important;
+    border-radius: 1vw;
+    box-shadow: 0px 3px 20px #1a1a1a96;
+  }
+  .Intro h2 {
+    color: #607744;
+    margin-bottom: 2vw;
+  }
+  .Intro p {
+    color: #383737;
+    margin-bottom: 5vw;
+  }
+  .Intro .Intro_Read_More {
+    background-color: #4392F1;
+    padding: 2vw 5vw;
+    border-radius: 1vw;
+    box-shadow: 0px 3px 10px #b4b4b4fb;
+    color: #F9F5FF;
+    transition: all ease 200ms;
+  }
+  .Intro .Intro_Read_More:hover {
+    background-color: transparent;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.205), transparent);
+    color: #383737;
+  }
+  .Intro img {
+    border-radius: 1.2vw;
+    width: 100%;
+    height: auto;
+  }
+  .Intro div {
+    float: none !important;
+    width: 50vw !important;
+    background-color: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.205), transparent);
+    padding: 0.4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    border-radius: 1.5vw;
+    box-shadow: 0px 3px 20px #1a1a1a96;
+    position: absolute !important;
+    left: 28% !important;
+    bottom: 78% !important;
+    margin-left: -5vw;
+    margin-bottom: -5vw;
+    shape-outside: circle(50%);
+  }
+  .Intro p {
+    margin-bottom: 8vw !important;
+  }
+  .Intro .Intro_Read_More {
+    background-color: #4392F1;
+    padding: 3vw 10vw !important;
+    border-radius: 1vw;
+    box-shadow: 0px 3px 10px #b4b4b4fb;
+    color: #F9F5FF;
+    font-size: 4vw;
+    transition: all ease 200ms;
+  }
+  .Intro .Intro_Read_More:hover {
+    background-color: transparent;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.205), transparent);
+    color: #383737;
+  }
+
+  .Skills {
+    width: 90% !important;
+  }
+  .Skills i {
+    font-size: 9vw !important;
+    position: relative !important;
+    top: 3.5vw;
+  }
+
+  footer {
+    background: #4392F1;
+    margin-top: 10vw;
+    padding: 2vw;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+  }
+  footer .footer-name {
+    border-bottom: 3px solid #F9F5FF;
+    margin-top: 20px;
+    margin-bottom: 10px !important;
+  }
+  footer .footer-name h2 {
+    letter-spacing: 3vw !important;
+  }
+  footer .footer-social {
+    display: flex;
+    justify-self: end;
+    align-items: center;
+    width: 60vw !important;
+    justify-content: space-between;
+  }
+  footer .footer-social a {
+    font-size: 46px !important;
+  }
+  footer .footer-copy {
+    text-align: center;
+    border-top: 3px solid #F9F5FF !important;
+    padding-top: 0.5vw;
+  }
+  footer .footer-copy p {
+    font-size: 3vw !important;
+    margin-bottom: 0;
+  }
+  footer .footer-copy span {
+    color: #F9F5FF;
+    font-family: "Poppins", sans-serif;
+    font-size: 2.4vw !important;
+  }
+
+  .About {
+    width: 90% !important;
+  }
+  .About li {
+    font-size: 3vw;
   }
 }
 @media all and (min-width: 481px) and (max-width: 768px) {
@@ -407,9 +585,6 @@ footer {
   grid-row-gap: 1vw;
   align-items: center;
 }
-footer h3 {
-  font-family: "Quicksand", sans-serif;
-}
 footer .footer-social {
   display: flex;
   justify-self: end;
@@ -468,6 +643,11 @@ body {
   position: relative;
   background-color: #454955;
   z-index: 0;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=index.css.map */

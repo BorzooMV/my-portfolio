@@ -1,5 +1,51 @@
 //Mobile devices
 @media all and (max-width:480px) {
+    p{
+        font-family: 'Poppins', sans-serif;
+        font-size: 3.8vw;
+        color: $Light;
+        line-height: 4.5vw;
+        margin-bottom: 1.5vw;
+    }
+    
+    li{
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.4vw;
+    }
+    
+    
+    h1,h2{
+        font-family: 'Audiowide', cursive;
+        color: $Light;
+        
+    }
+    
+    h1{
+        font-size: 5vw !important;
+        color: $Light;
+    }
+    
+    h2{
+        font-size: 4.5vw !important;
+    }
+    
+    h3,h3{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        color: $Light;
+    }
+    
+    .tinyDetails{
+        font-family: 'Quicksand', sans-serif;
+        color: $Light;
+    }
+    
+    a{
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2vw;
+        color: $Light;
+    }
     
 
     header{
@@ -26,6 +72,147 @@
             display: block;
         }
 
+        #menu{
+            ul{
+                li{
+                    &:first-child{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .Intro{
+        position: relative;
+        width: 90% !important;
+        margin: auto;
+        margin-top: 25vw !important;
+        background-color: $Secondary;
+        padding: 50px;
+        padding-top: 35vw !important;
+        border-radius: $BorderRadius;
+        box-shadow:$LargeShadow;
+        h2{
+            color:$Green;
+            margin-bottom: 2vw;
+        }
+        p{
+            color: $Dark;
+            margin-bottom: 5vw;
+        }
+        .Intro_Read_More{
+            background-color: $Primary;
+            padding: 2vw 5vw;
+            border-radius: $BorderRadius;
+            box-shadow: $LightShadowOnS;
+            color: $Light;
+            transition: all ease 200ms;
+            &:hover{
+                background-color: transparent;
+                background: $Glass;
+                color: $Dark;
+            }
+        }
+        img{
+            border-radius: 1.2vw;
+            width: 100%;
+            height: auto;
+        }
+        div{
+            float: none !important;
+            width: 50vw !important;
+            background-color: $Glass;
+            padding: 0.4vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: auto;
+            border-radius: 1.5vw;
+            box-shadow: $LargeShadow;
+            position: absolute !important;
+            left: 28% !important;
+            bottom: 78% !important;
+            margin-left: -5vw;
+            margin-bottom: -5vw;
+            shape-outside: circle(50%);
+        }
+        p{
+            margin-bottom: 8vw !important;
+        }
+        .Intro_Read_More{
+            background-color: $Primary;
+            padding: 3vw 10vw !important;
+            border-radius: $BorderRadius;
+            box-shadow: $LightShadowOnS;
+            color: $Light;
+            font-size: 4vw;
+            transition: all ease 200ms;
+            &:hover{
+                background-color: transparent;
+                background: $Glass;
+                color: $Dark;
+            }
+        }
+    }
+
+    .Skills{
+        width: 90% !important;
+        i{
+            font-size: 9vw !important;
+            position: relative !important;
+            top: 3.5vw;
+        }
+    }
+
+    footer{
+        background: $Primary;
+        margin-top: 10vw;
+        padding: 2vw;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center;
+        .footer-name{
+            border-bottom: 3px solid $Light;
+            margin-top: 20px;
+            margin-bottom: 10px !important;
+            h2{
+                letter-spacing: 3vw !important;
+            }
+        }
+        .footer-social{
+            display: flex;
+            justify-self: end;
+            align-items: center;
+            width: 60vw !important;
+            // background-color: blueviolet;
+            justify-content: space-between;
+            a{
+                font-size: 46px !important;
+            }
+    
+        }
+        .footer-copy{
+            text-align: center;
+            border-top: 3px solid $Light !important;
+            padding-top: 0.5vw;
+            p{
+                font-size: 3vw !important;
+                margin-bottom: 0;
+            }
+            span{
+                color: $Light;
+                font-family: 'Poppins',sans-serif;
+                font-size: 2.4vw !important;
+            }
+        }
+    }
+
+    .About{
+        width: 90% !important;
+        li{
+            font-size: 3vw;
+        }
     }
 }
 
