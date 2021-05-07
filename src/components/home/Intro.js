@@ -1,5 +1,5 @@
 import React from 'react';
-import myPic from '../../assets/images/pics/me.JPG';
+import myPic from '../../assets/images/pics/me_lq.JPG';
 import { Link } from 'react-router-dom';
 
 const Intro = () => {

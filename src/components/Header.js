@@ -32,7 +32,7 @@ const Header = () => {
                 <ul>
                     <li><Link to="#">Portfolio</Link></li>
                     <li><Link to="/about">About</Link></li>
-                    <li><Link to="#">Connect</Link></li>
+                    <li><Link to="/connect">Connect</Link></li>
                 </ul>
             </nav>
             {
@@ -49,7 +49,7 @@ const Header = () => {
                         <ul>
                             <li><Link to="#" onClick={linkClickHandler}>Portfolio</Link></li>
                             <li><Link to="/about" onClick={linkClickHandler}>About</Link></li>
-                            <li><Link to="#" onClick={linkClickHandler}>Connect</Link></li>
+                            <li><Link to="/connect" onClick={linkClickHandler}>Connect</Link></li>
                         </ul>
 			</div>
         </header>
